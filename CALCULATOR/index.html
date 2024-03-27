@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">  
+    </head>
+       <body >
+
+<div class="main">
+<table border="1"><tr><td>
+<form name="form">
+<input type="text" name="textview" class="textview">
+<div class="clearfix">
+<div class="col-3">
+<input type="button" value="C" class="button top" onclick="clean();"></div>
+ 
+<div class="col-3">
+<input type="button" value="Del" class="button top" onclick="back();"></div>
+</div> 
+
+
+<div class="clearfix">
+<div class="col-3">
+<input type="button" value="cos" class="button top-button" onclick="cosine();"/>
+</div> 
+
+<div class="col-3">
+<input type="button" value="sin" class="button top-button" onclick="sine();"/>
+</div> 
+
+<div class="col-3">
+<input type="button" value="tan" class="button top-button" onclick="tg();"/>
+</div> 
+
+<div class="col-3">
+<input type="button" value="Log" class="button top-button" onclick="funLog();"/>
+</div> 
+</div>
+
+
+<div class="clearfix">
+<div class="col-3">
+<input type="button" value="x^3" class="button top-button" onclick="power2();"></div>
+
+<div class="col-3">
+<input type="button" value=" √ " class="button top-button" onclick="sq();"></div> 
+
+<div class="col-3">
+<input type="button" value="x^2" class="button top-button" onclick="power();"></div>
+
+<div class="col-3">
+<input type="button" value="&#247;" class="button operator" onclick="insert('/');"></div>
+   </div>  
+           
+<div class="clearfix">
+<div class="col-3">
+<input type="button" value="7" class="button" onclick="insert(7);"></div>
+    
+<div class="col-3">
+<input type="button" value="8" class="button"onclick="insert(8);"></div>
+
+<div class="col-3">
+<input type="button" value="9" class="button" onclick="insert(9);"></div>
+
+<div class="col-3">
+<input type="button" value="&#215;" class="button operator" onclick="insert('*');"></div>
+</div>
+
+
+<div class="clearfix">
+<div class="col-3">
+<input type="button" value="4" class="button" onclick="insert(4);"></div>
+
+<div class="col-3">
+<input type="button" value="5" class="button" onclick="insert(5);"></div>
+    
+<div class="col-3">
+<input type="button" value="6" class="button" onclick="insert(6);"></div>
+
+<div class="col-3">
+<input type="button" value="&#8722;" class="button operator" onclick="insert('-');"></div>
+</div>
+ 
+ 
+ 
+<div class="clearfix">
+<div class="col-3">
+<input type="button" value="1" class="button" onclick="insert(1);"></div>
+
+<div class="col-3">
+<input type="button" value="2" class="button" onclick="insert(2);"></div>
+
+<div class="col-3">
+<input type="button" value="3" class="button" onclick="insert(3);"></div>
+
+<div class="col-3">
+<input type="button" value="&#43;" class="button operator" onclick="insert('+');"></div>
+</div>
+    
+        
+<div class="classfix">
+<div class="col-3">
+<input type="button" value="." class="button" onclick="insert('.');"></div>
+
+<div class="col-3">
+<input type="button" value="0" class="button" onclick="insert(0);"></div>
+    
+<div class="col-3">
+<input type="button" value="&#61;" class="button equal" onclick="equal();"></div>
+  
+<div class="col-3">
+<input type="button" value="%" class="button operator" onclick="insert('%');"></div>
+  
+
+</div> 
+</form>     
+    </div>
+   </td></tr></table> 
+    <!--javascript functions-->
+    </body>
+    <script src="main.js"></script>
+</html>
